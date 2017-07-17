@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin"
+    tools:context=".ProductActivity">
+
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:background="@drawable/ic_no_image" />
+
+    <LinearLayout
+        android:id="@+id/photo_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_product"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/large_margin">
+
+        <Button
+            android:id="@+id/button_select_photo"
+            style="@style/PhotoButtons"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@color/colorPlay"
+            android:text="@string/select_photo"/>
+
+        <Button
+            android:id="@+id/button_take_photo"
+            style="@style/PhotoButtons"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:background="@color/colorNext"
+            android:text="@string/take_photo" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/productEditText"
+        android:layout_below="@id/photo_buttons"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        android:maxLength="25" />
+
+    <LinearLayout
+        android:id="@+id/quantity_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_name"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/QuantityButtons"
+            android:id="@+id/button_minus"
+            android:background="@color/colorStop"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/text_quantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/quantity"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            style="@style/QuantityButtons"
+            android:id="@+id/button_plus"
+            android:background="@color/colorPlay"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_price"
+        style="@style/productEditText"
+        android:layout_below="@id/quantity_controls"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:maxLength="14" />
+
+    <LinearLayout
+        android:id="@+id/buttons_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_price"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/large_margin">
+
+        <Button
+            android:id="@+id/button_delete"
+            style="@style/PhotoButtons"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@color/colorStop"
+            android:text="@string/delete"/>
+
+        <Button
+            android:id="@+id/button_order"
+            style="@style/PhotoButtons"
+            android:background="@color/colorPrev"
+            android:text="@string/order" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/PhotoButtons"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save" />
+
+
+    </LinearLayout>
+</RelativeLayout>

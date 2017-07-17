@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPlay">#00c853</color>
+    <color name="colorStop">#c62828</color>
+    <color name="colorNext">#42a5f5</color>
+    <color name="colorPrev">#fbc02d</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_grey">#757575</color>
+    <color name="secondary_title">#999999</color>
+    <color name="title">#222222</color>
+    <color name="fabNormal">#da3c2f</color>
+    <color name="fabPressed">#dc4b3f</color>
+    <color name="fabLabelsNormal">#333</color>
+    <color name="fabLabelsPressed">#444</color>
+    <color name="fabRipple">#99d4d4d4</color>
+    <color name="fabLabelsTextColor">#f2f1f1</color>
+    <color name="fabLabelsRipple">#66efecec</color>
+
+</resources>
